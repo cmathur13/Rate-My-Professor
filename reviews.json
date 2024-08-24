@@ -1,0 +1,124 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. Emily Sanders",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Dr. Sanders is an excellent professor! Her lectures are clear, and she is always willing to help students."
+    },
+    {
+      "professor": "Dr. James Harrison",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Dr. Harrison is knowledgeable and explains concepts well, but sometimes the pace is too fast."
+    },
+    {
+      "professor": "Dr. Karen Lee",
+      "subject": "Physics",
+      "stars": 3,
+      "review": "Dr. Lee's classes are interesting, but her grading is quite tough."
+    },
+    {
+      "professor": "Dr. Michael Brown",
+      "subject": "Chemistry",
+      "stars": 2,
+      "review": "The lectures are somewhat disorganized, and it's hard to follow the material."
+    },
+    {
+      "professor": "Dr. Olivia Martinez",
+      "subject": "Biology",
+      "stars": 5,
+      "review": "Dr. Martinez is amazing! She makes the subject so engaging and accessible."
+    },
+    {
+      "professor": "Dr. William Johnson",
+      "subject": "History",
+      "stars": 4,
+      "review": "Dr. Johnson's lectures are very detailed, but sometimes the workload is overwhelming."
+    },
+    {
+      "professor": "Dr. Sophia Nguyen",
+      "subject": "Philosophy",
+      "stars": 5,
+      "review": "Incredible professor. Her insights are profound, and she encourages deep thinking."
+    },
+    {
+      "professor": "Dr. David King",
+      "subject": "Economics",
+      "stars": 3,
+      "review": "The course material is challenging, but Dr. King is not very approachable for help."
+    },
+    {
+      "professor": "Dr. Lily Zhang",
+      "subject": "Political Science",
+      "stars": 4,
+      "review": "Dr. Zhang is very knowledgeable and provides real-world examples, but her exams are tough."
+    },
+    {
+      "professor": "Dr. John Davis",
+      "subject": "Sociology",
+      "stars": 5,
+      "review": "Dr. Davis makes sociology fun and relatable. His classes are always lively."
+    },
+    {
+      "professor": "Dr. Laura Kim",
+      "subject": "Psychology",
+      "stars": 3,
+      "review": "Interesting lectures, but Dr. Kim's assignments are very vague and confusing."
+    },
+    {
+      "professor": "Dr. Thomas Wilson",
+      "subject": "Art History",
+      "stars": 4,
+      "review": "Dr. Wilson's passion for art is infectious. However, his grading criteria are not very clear."
+    },
+    {
+      "professor": "Dr. Megan Clark",
+      "subject": "English Literature",
+      "stars": 5,
+      "review": "Dr. Clark is fantastic! She provides great feedback and really cares about her students."
+    },
+    {
+      "professor": "Dr. Eric Evans",
+      "subject": "Statistics",
+      "stars": 2,
+      "review": "The course is very difficult, and Dr. Evans is not very responsive to emails."
+    },
+    {
+      "professor": "Dr. Rachel Thompson",
+      "subject": "Anthropology",
+      "stars": 4,
+      "review": "Dr. Thompson's lectures are fascinating, but her expectations are sometimes unclear."
+    },
+    {
+      "professor": "Dr. Richard Anderson",
+      "subject": "Engineering",
+      "stars": 3,
+      "review": "The material is tough, and Dr. Anderson's lectures are often hard to follow."
+    },
+    {
+      "professor": "Dr. Jessica Moore",
+      "subject": "Environmental Science",
+      "stars": 5,
+      "review": "Dr. Moore is inspiring! She brings real-world applications into her teaching."
+    },
+    {
+      "professor": "Dr. Steven Wright",
+      "subject": "Philosophy",
+      "stars": 2,
+      "review": "The lectures are monotonous, and Dr. Wright does not engage much with students."
+    },
+    {
+      "professor": "Dr. Anna Roberts",
+      "subject": "Business Administration",
+      "stars": 4,
+      "review": "Dr. Roberts is very experienced and provides practical insights, but the course is demanding."
+    },
+    {
+      "professor": "Dr. Daniel Taylor",
+      "subject": "Law",
+      "stars": 5,
+      "review": "Dr. Taylor is a brilliant professor. His classes are challenging but incredibly rewarding."
+    }
+  ]
+}
