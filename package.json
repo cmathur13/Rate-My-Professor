@@ -12,11 +12,13 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@google/generative-ai": "^0.17.1",
-    "@mui/material": "^5.16.7",
+    "@mui/icons-material": "^6.0.1",
+    "@mui/material": "^6.0.1",
     "@pinecone-database/pinecone": "^3.0.1",
-    "next": "14.2.6",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^14.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "eslint": "^8",

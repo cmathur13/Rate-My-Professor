@@ -24,42 +24,20 @@ export default function Home() {
       { role: "assistant", content: '' }
     ]);
     setMessage('');
-    const response = fetch('/api/chat', {
-      method: "POST",
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify([...messages, { role: "user", content: message }])
-    }).then(async (res) => {
-      const reader = res.body.getReader();
-      const decoder = new TextDecoder();
-
-      let result = '';
-      return reader.read().then(function processText({ done, value }) {
-        if (done) {
-          return result;
-        }
-        const text = decoder.decode(value || new Uint8Array(), { stream: true });
-        setMessages((messages) => {
-          let lastMessage = messages[messages.length - 1];
-          let otherMessages = messages.slice(0, messages.length - 1);
-          return [
-            ...otherMessages,
-            { ...lastMessage, content: lastMessage.content + text },
-          ];
-        });
-        return reader.read().then(processText);
-      });
+    const response = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message })
     });
+    const data = await response.json();
+    setMessages((messages) => [
+      ...messages,
+      { role: "assistant", content: data.reply }
+    ]);
   };
 
   const restartChat = () => {
-    setMessages([
-      {
-        role: "assistant",
-        content: "Hi! I'm the Rate My Professor AI assistant. How can I help you today?"
-      }
-    ]);
+    setMessages([{ role: "assistant", content: "Hi! I'm the Rate My Professor AI assistant. How can I help you today?" }]);
   };
 
   return (
@@ -84,7 +62,17 @@ export default function Home() {
       >
         <AppBar position="static" sx={{ bgcolor: '#00796b', borderTopLeftRadius: 4, borderTopRightRadius: 4 }}>
           <Toolbar>
-            <img src="icon.jpg.png" alt="Bot Icon" style={{ width: 40, height: 40, marginRight: 8 }} />
+            <img 
+              src="/icon.jpg" 
+              alt="AI Icon" 
+              style={{ 
+                width: 40, 
+                height: 40, 
+                marginRight: 8, 
+                borderRadius: '50%', 
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' 
+              }} 
+            />
             <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
               Rate My Professor AI
             </Typography>
@@ -111,7 +99,17 @@ export default function Home() {
               }
             >
               {message.role === 'assistant' && (
-                <img src="icon.jpg" alt="Bot Icon" style={{ width: 30, height: 30, marginRight: 8 }} />
+                <img 
+                  src="/icon.jpg" 
+                  alt="AI Icon" 
+                  style={{ 
+                    width: 30, 
+                    height: 30, 
+                    marginRight: 8, 
+                    borderRadius: '50%', 
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' 
+                  }} 
+                />
               )}
               <Box
                 bgcolor={
