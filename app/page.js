@@ -84,7 +84,7 @@ export default function Home() {
       >
         <AppBar position="static" sx={{ bgcolor: '#00796b', borderTopLeftRadius: 4, borderTopRightRadius: 4 }}>
           <Toolbar>
-            <img src="/images/bot.png" alt="Bot Icon" style={{ width: 40, height: 40, marginRight: 8 }} />
+            <img src="icon.jpg.png" alt="Bot Icon" style={{ width: 40, height: 40, marginRight: 8 }} />
             <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
               Rate My Professor AI
             </Typography>
@@ -111,7 +111,7 @@ export default function Home() {
               }
             >
               {message.role === 'assistant' && (
-                <img src="/images/bot.png" alt="Bot Icon" style={{ width: 30, height: 30, marginRight: 8 }} />
+                <img src="icon.jpg" alt="Bot Icon" style={{ width: 30, height: 30, marginRight: 8 }} />
               )}
               <Box
                 bgcolor={
